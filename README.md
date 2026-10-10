@@ -35,9 +35,5 @@ Deploy the **generated `dist/` directory** to any static host (GitHub Pages need
 
 Language selection translates **within the current page**. The default public MyMemory API is free, rate-limited, and cannot guarantee full translation of long pages. For reliable 20-language production translation, deploy your own licensed translation backend and set `window.NUMEN_TRANSLATE_ENDPOINT` before `/assets/app.js` is loaded. Never put a private translation API key in client-side code. English is always available offline. Translation does not alter canonical SEO URLs.
 
-## Security and editorial notes
-
-The PoScan illustrations are educational. Consensus does not scan or authenticate physical objects. Validators do not currently receive protocol yield. Market listings and prospective ecosystem products should be verified before changing their status.
-=======
 # www.numen-network.org
 >>>>>>> origin/master
