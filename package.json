@@ -1,0 +1,12 @@
+{
+  "name": "numen-network-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build.mjs && node scripts/server.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/server.mjs",
+    "check": "node --check src/main.js && node --check src/config/pages.js && node --check src/config/network.js && node --check src/config/navigation.js && node --check src/features/poscan/asteroid.js && node --check src/features/i18n/translate.js"
+  }
+}
