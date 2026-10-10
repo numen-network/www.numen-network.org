@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Numen Network Website — v1.0.0
 
 Official website source. English is the canonical source language.
@@ -37,3 +38,6 @@ Language selection translates **within the current page**. The default public My
 ## Security and editorial notes
 
 The PoScan illustrations are educational. Consensus does not scan or authenticate physical objects. Validators do not currently receive protocol yield. Market listings and prospective ecosystem products should be verified before changing their status.
+=======
+# www.numen-network.org
+>>>>>>> origin/master
