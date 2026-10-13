@@ -5,5 +5,5 @@ export const navigation = [
  {title:'Participate',icon:'⚒',links:[['Mining','/participate/mining'],['Mining pools','/participate/mining-pools'],['Validators','/participate/validators'],['Run a node','/participate/nodes'],['Governance','/participate/governance']]},
  {title:'Markets',icon:'↗',links:[['Market overview','/markets'],['Exchanges','/markets/exchanges'],['How to get NUMN','/markets/how-to-buy'],['Market trackers','/markets/data']]},
  {title:'Community',icon:'◎',links:[['Community hub','/community'],['Founders & contributors','/community/team'],['Partners & integrations','/community/partners'],['Contact','/community/contact'],['Official channels','/community/channels']]},
- {title:'Resources',icon:'▤',links:[['Documentation','/resources/docs'],['Technical whitepaper','/whitepaper'],['Security & limitations','/resources/security'],['Frequently asked questions','/resources/faq']]}
+ {title:'Resources',icon:'▤',links:[['Documentation','/resources/docs'],['Technical whitepaper','/whitepaper'],['Security & limitations','/resources/security']]}
 ];

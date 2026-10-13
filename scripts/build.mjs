@@ -19,9 +19,9 @@ js+='\n'+['home.js','ecosystem.js','education.js','participate.js','faq-and-case
 js+='\n'+read('src/main.js').replace(/^import .*;\s*$/gm,'');
 fs.mkdirSync(path.join(out,'assets'),{recursive:true});
 fs.writeFileSync(path.join(out,'assets/app.js'),js);
-fs.writeFileSync(path.join(out,'assets/app.css'),read('src/styles/main.css')+'\n'+read('src/styles/responsive.css'));
+fs.writeFileSync(path.join(out,'assets/app.css'),read('src/styles/site.css'));
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const routes=[...new Set(['/', '/markets', '/whitepaper', '/whitepaper/read/', '/ecosystem','/developers','/community',...Object.keys(pages),...navigation.flatMap(g=>g.links.map(([,url])=>url))])].filter(p=>p.startsWith('/'));
+const routes=[...new Set(['/', '/markets', '/whitepaper', '/whitepaper/read/', '/ecosystem','/developers','/community',...Object.keys(pages),...navigation.flatMap(g=>g.links.map(([,url])=>url))])].filter(p=>p.startsWith('/') && p!=='/resources/faq' && p!=='/whitepaper/read/');
 const navLinks=navigation.map(g=>`<section><h2>${esc(g.title)}</h2><ul>${g.links.map(([title,url])=>`<li><a href="${esc(url)}">${esc(title)}</a></li>`).join('')}</ul></section>`).join('');
 const fallback=(route)=>{
  if(route==='/community/team')return `<main id="main-content"><h1>Founders & contributors</h1><p>Meet the founders, developers and community representatives contributing to Numen Network.</p>${['Founders','Developers','Community Representatives'].map(group=>`<section><h2>${esc(group)}</h2>${team.filter(member=>member.group===group).map(member=>`<article><h3>${esc(member.name)}</h3><p>${esc(member.role)}</p></article>`).join('')}</section>`).join('')}</main>`;
@@ -41,7 +41,7 @@ for(const route of routes){
  const desc=p?.lead||'Numen Network: geometric Proof of Scan, GRANDPA finality, EVM, wallets, mining, developer tools and ecosystem.';
  const canonical='https://numen-network.org'+route;
  let html=template.replace(/<title>[^<]*<\/title>/,`<title>${esc(title)}</title>`).replace(/<meta name="description" content="[^"]*"\/>/,`<meta name="description" content="${esc(desc)}"/>`).replace(/<meta property="og:title" content="[^"]*"\/>/,`<meta property="og:title" content="${esc(title)}"/>`).replace(/<meta property="og:description" content="[^"]*"\/>/,`<meta property="og:description" content="${esc(desc)}"/>`).replace('</head>',`<link rel="canonical" href="${esc(canonical)}"/><meta property="og:url" content="${esc(canonical)}"/><meta name="robots" content="index,follow"/><script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':route==='/'?'WebSite':'WebPage',name:title,url:canonical,description:desc}).replaceAll('<','\\u003c')}</script></head>`).replace('<div id="app"></div>',`<div id="app"><div class="static-fallback">${fallback(route)}</div></div>`);
- if(route==='/whitepaper/read/')continue;
+ if(route==='/whitepaper/read/' || route==='/resources/faq')continue;
  const dest=route==='/'?path.join(out,'index.html'):path.join(out,route.slice(1),'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,html);
 }
 fs.writeFileSync(path.join(out,'404.html'),template.replace('<div id="app"></div>','<main><h1>Page not found</h1><a href="/">Go home</a></main>'));

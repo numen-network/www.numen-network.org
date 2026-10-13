@@ -19,7 +19,7 @@ export const team = [
   {
     id: 'moto-z',
     name: 'Moto Z',
-    role: 'Co-Founder & Lead Blockchain Developer',
+    role: 'Founder & Lead Blockchain Developer',
     founder: true,
     discordUsername: '@numen_motoz',
     telegram: 'https://t.me/numen_motoz',
@@ -28,7 +28,7 @@ export const team = [
   {
     id: 'fd',
     name: 'FD',
-    role: 'Co-Founder & Developer',
+    role: 'Founder & Application Developer',
     founder: true,
     discordUsername: '@fd3dpass',
     telegram: 'https://t.me/iayfd',
@@ -37,7 +37,7 @@ export const team = [
   {
     id: 'aimaster',
     name: 'AlMaster',
-    role: 'Developer',
+    role: 'Application Developer',
     founder: false,
     discordUsername: '',
     telegram: 'https://t.me/InwestujzAI',
@@ -46,16 +46,26 @@ export const team = [
   {
     id: 'aleksey',
     name: 'Алексей',
-    role: 'Mining Representative',
+    role: 'Strategic Partnerships & Ecosystem Relations',
     founder: false,
     discordUsername: '',
     telegram: 'https://t.me/tapenumbra',
     avatar: ''
   },
   {
+    // QA contributor: add only verified social profile URLs when available.
+    id: 'bbaki07',
+    name: 'bbaki07',
+    role: 'Ecosystem Product Testing & QA',
+    founder: false,
+    discordUsername: '',
+    telegram: '',
+    avatar: ''
+  },
+  {
     id: 'venom',
     name: 'Venom',
-    role: 'Community Representative',
+    role: 'Marketing & Social Media Manager',
     founder: false,
     discordUsername: '',
     telegram: 'https://t.me/Vveennoom7',

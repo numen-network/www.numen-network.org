@@ -41,20 +41,8 @@ function teamDirectory() {
     </article>
   `;
 
-  const sections = [
-    {
-      title: 'Founders',
-      description:
-        'The individuals who initiated the Numen Network project.',
-      members: team.filter(person => person.founder)
-    },
-    {
-      title: 'Contributors',
-      description:
-        'Volunteers contributing to development, mining and community growth.',
-      members: team
-    }
-  ];
+  // Keep every person in one list; never duplicate founders in a second section.
+  const members = team;
 
   return `
     <div class="team-directory">
@@ -89,30 +77,14 @@ function teamDirectory() {
         </p>
       </div>
 
-      ${sections.map(section => `
-        <section class="team-group"
-                 aria-label="${esc(section.title)}">
-
-          <div class="team-group-head">
-            <div>
-              <span class="eyebrow">
-                NUMEN NETWORK
-              </span>
-
-              <h2>${esc(section.title)}</h2>
-              <p>${esc(section.description)}</p>
-            </div>
-
-            <span class="team-group-count">
-              ${section.members.length} contributors
-            </span>
-          </div>
-
-          <div class="team-grid">
-            ${section.members.map(personCard).join('')}
-          </div>
-        </section>
-      `).join('')}
+      <section class="team-group" aria-label="Numen team members">
+        <div class="team-group-head">
+          <div><span class="eyebrow">NUMEN NETWORK</span><h2>Team & Contributors</h2>
+            <p>Founders and contributors supporting Numen's development and ecosystem.</p></div>
+          <span class="team-group-count">${members.length} members</span>
+        </div>
+        <div class="team-grid">${members.map(personCard).join('')}</div>
+      </section>
 
       <div class="team-directory-note">
         <h2>Become a Contributor</h2>
