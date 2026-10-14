@@ -16,6 +16,7 @@ let js=['src/config/navigation.js','src/config/network.js','src/config/pages.js'
 js+='\n'+read('src/features/poscan/asteroid.js').replaceAll(/\bexport\s+(?=function\s)/g,'');
 js+='\n'+read('src/features/i18n/translate.js').replaceAll(/\bexport\s+(?=(const|function|async function)\s)/g,'');
 js+='\n'+['home.js','ecosystem.js','education.js','participate.js','faq-and-cases.js'].map(f=>read('src/pages/'+f)).join('\n');
+js+='\n'+read('src/features/mining/dashboard.js').replaceAll(/\bexport\s+(?=(const|function|async function)\s)/g,'');
 js+='\n'+read('src/main.js').replace(/^import .*;\s*$/gm,'');
 fs.mkdirSync(path.join(out,'assets'),{recursive:true});
 fs.writeFileSync(path.join(out,'assets/app.js'),js);
