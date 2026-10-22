@@ -1,0 +1,32 @@
+/* Learn Overview only. All selectors are scoped to .nl-page. */
+.nl-page{background:var(--bg,#fff);color:var(--text,#181525);padding:42px 0 90px}
+.nl-page .nl-container{width:min(1110px,calc(100% - 48px));margin:0 auto}
+.nl-page .nl-section{margin:0 0 76px}
+.nl-page .nl-kicker{font-size:12px;letter-spacing:.11em;font-weight:750;color:#6b4bd2}
+.nl-page h1,.nl-page h2,.nl-page h3{color:var(--text,#171322);letter-spacing:-.035em}
+.nl-page h1{font-size:clamp(32px,4vw,48px);line-height:1.1;margin:12px 0 18px;font-weight:800}
+.nl-page h2{font-size:clamp(27px,3vw,36px);line-height:1.17;margin:0 0 15px;font-weight:800}
+.nl-page .nl-intro>p,.nl-page .nl-lead{max-width:860px;font-size:16px;line-height:1.72;color:var(--muted,#555369);margin:0 0 24px}
+.nl-page .nl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.nl-page .nl-card{display:flex;flex-direction:column;overflow:hidden;min-height:425px;background:var(--surface,#f7f7f9);border:1px solid var(--border,#e9e7ee);border-radius:25px;text-decoration:none;color:inherit;transition:transform .2s,border-color .2s,box-shadow .2s}
+.nl-page .nl-card:hover{transform:translateY(-4px);border-color:#9b7bf0;box-shadow:0 14px 35px #17112612}
+.nl-page .nl-art{height:180px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f0effb,#f0f6f8);padding:12px}
+.nl-page .nl-art svg{width:100%;height:100%;max-width:320px}
+.nl-page .nl-card-content{padding:21px 22px 22px;display:flex;flex-direction:column;flex:1}
+.nl-page .nl-card h3{font-size:22px;line-height:1.2;font-weight:800;margin:0 0 9px}
+.nl-page .nl-card p{font-size:14px;line-height:1.62;color:var(--muted,#59566a);margin:0 0 23px}
+.nl-page .nl-card-action{display:flex;align-items:center;justify-content:center;gap:6px;background:#6741d7;color:white;font-weight:750;font-size:13px;border-radius:6px;padding:12px 10px;margin-top:auto;text-align:center}
+.nl-page .nl-card:hover .nl-card-action{background:#5131b7}
+.nl-page .nl-banner{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;min-height:260px;border-radius:22px;background:linear-gradient(110deg,#ede5ff,#e9e9fb);padding:36px 42px;overflow:hidden;text-decoration:none;color:#1b1731}
+.nl-page .nl-banner h3{font-size:28px;line-height:1.2;margin:10px 0;color:#201735}
+.nl-page .nl-banner p{max-width:520px;line-height:1.65;margin:0 0 18px;color:#514b67}
+.nl-page .nl-banner-button{display:inline-flex;background:#6741d7;color:#fff;border-radius:6px;padding:12px 18px;font-weight:700;font-size:13px}
+.nl-page .nl-banner-art svg{width:100%;max-height:220px}
+.nl-page .nl-footnote{font-size:12px;color:var(--muted,#777);line-height:1.65;border-top:1px solid var(--border,#ddd);padding-top:16px}
+[data-theme="dark"] .nl-page .nl-art, .dark .nl-page .nl-art{background:linear-gradient(135deg,#25263a,#1d3640)}
+[data-theme="dark"] .nl-page .nl-banner,.dark .nl-page .nl-banner{background:linear-gradient(110deg,#30254d,#1f3045)}
+[data-theme="dark"] .nl-page .nl-banner h3,.dark .nl-page .nl-banner h3{color:#f5f2ff}
+[data-theme="dark"] .nl-page .nl-banner p,.dark .nl-page .nl-banner p{color:#d5cde9}
+@media(max-width:850px){.nl-page .nl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nl-page .nl-banner{padding:26px}.nl-page .nl-card{min-height:390px}}
+@media(max-width:600px){.nl-page{padding:28px 0 55px}.nl-page .nl-container{width:min(100% - 30px,480px)}.nl-page .nl-section{margin-bottom:50px}.nl-page .nl-grid{grid-template-columns:1fr;gap:16px}.nl-page .nl-card{min-height:0}.nl-page .nl-art{height:180px}.nl-page .nl-banner{grid-template-columns:1fr;padding:24px}.nl-page .nl-banner-art{max-width:240px;margin:10px auto 0}.nl-page h1{font-size:35px}}
+@media(prefers-reduced-motion:reduce){.nl-page .nl-card{transition:none}.nl-page .nl-card:hover{transform:none}}

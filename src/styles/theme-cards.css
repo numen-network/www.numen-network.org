@@ -1,0 +1,38 @@
+/* Unified light/dark tokens for inner pages only. Home styles remain untouched. */
+html[data-theme="light"] .numen-inner-page,
+html[data-theme="light"] .nl-page {
+  --surface:#f7f7f9;--card:#f7f7f9;--border:#e7e4ed;
+  --text-secondary:#595364;--inner-card:#f7f7f9;--inner-border:#e7e4ed;
+  --inner-muted:#595364;--inner-accent:#6741d7;
+  --card-illustration:linear-gradient(135deg,#f0effb,#edf4f7);
+}
+html[data-theme="dark"] .numen-inner-page,
+html[data-theme="dark"] .nl-page {
+  --surface:#211d2c;--card:#211d2c;--border:#40384e;
+  --text-secondary:#c5bdd1;--inner-card:#211d2c;--inner-border:#40384e;
+  --inner-muted:#c5bdd1;--inner-accent:#b99bff;
+  --card-illustration:linear-gradient(135deg,#30283e,#22333e);
+}
+/* Standard cards: use theme-aware surfaces, text and borders. */
+.numen-inner-page :is(.feature-card,.content-block,.market-card,.stat,.case-card,.cases-matrix>div,.cases-flow>div,.cases-toc,.developer-doc-grid>article,.team-card,.step,.milestone,.note,.developer-note,.mini-links a),
+.nl-page .nl-card {
+  background-color:var(--card)!important;
+  border-color:var(--border)!important;
+  color:var(--text)!important;
+}
+.numen-inner-page :is(.feature-card,.content-block,.market-card,.stat,.case-card,.cases-matrix>div,.cases-flow>div,.cases-toc,.developer-doc-grid>article,.team-card,.step,.milestone,.note,.developer-note,.mini-links a) :is(h2,h3,h4,strong),
+.nl-page .nl-card :is(h2,h3,h4,strong){color:var(--text)}
+.numen-inner-page :is(.feature-card,.content-block,.market-card,.stat,.case-card,.cases-matrix>div,.cases-flow>div,.cases-toc,.developer-doc-grid>article,.team-card,.step,.milestone,.note,.developer-note) :is(p,small,li),
+.nl-page .nl-card p{color:var(--text-secondary)}
+/* Preserve colored CTAs and real images; only theme the decorative illustration backgrounds. */
+.nl-page .nl-art{background:var(--card-illustration)}
+.numen-inner-page .cases-flow,.numen-inner-page .cases-equation,.numen-inner-page .cases-callout{background:var(--surface);border-color:var(--border)}
+.numen-inner-page .market-status,.numen-inner-page .market-soon{color:var(--text-secondary);border-color:var(--border)}
+.numen-inner-page :is(.feature-card,.content-block,.market-card,.case-card,.developer-doc-grid>article) a:not(.btn):not(.btn-primary):not(.market-action):not(.card-link){color:var(--accent)}
+/* Consistent hover states with accessible contrast. */
+.numen-inner-page :is(.feature-card,.content-block,.market-card,.case-card,.developer-doc-grid>article):hover,
+.nl-page .nl-card:hover{border-color:var(--inner-accent)!important}
+html[data-theme="dark"] .numen-inner-page :is(.feature-card,.content-block,.market-card,.case-card,.developer-doc-grid>article):hover,
+html[data-theme="dark"] .nl-page .nl-card:hover{box-shadow:0 14px 34px #0005}
+/* White text on dark accent buttons in both themes. */
+.numen-inner-page :is(.btn-primary,.market-action,.card-link),.nl-page :is(.nl-card-action,.nl-banner-button){color:#fff}

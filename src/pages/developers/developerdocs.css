@@ -1,0 +1,13 @@
+/* Styles scoped to the two developer reference pages only. */
+.developer-docs-page .developer-doc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px;align-items:start}
+.developer-docs-page .developer-doc-grid>article{min-width:0;padding:clamp(18px,2.5vw,28px);border:1px solid var(--border,#dddde5);border-radius:16px;background:var(--surface,#f7f7fa)}
+.developer-docs-page .network-setting{display:grid;grid-template-columns:minmax(100px,0.75fr) minmax(0,1.8fr) auto;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--border,#dddde5)}
+.developer-docs-page .network-setting code{overflow-wrap:anywhere;word-break:break-word;font-size:.83rem}
+.developer-docs-page .network-setting>span{font-size:.84rem}
+.developer-docs-page .developer-example{max-width:100%;min-width:0}
+.developer-docs-page .developer-example pre{max-width:100%;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere}
+.developer-docs-page .developer-docs{margin-top:12px}
+.developer-docs-page .developer-note{margin-top:22px;padding:20px;border:1px solid var(--border,#dddde5);border-radius:12px}
+.developer-docs-page .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.developer-docs-page .btn-primary,.developer-docs-page .btn-primary:visited{color:#fff!important;-webkit-text-fill-color:#fff!important}
+@media(max-width:650px){.developer-docs-page .network-setting{grid-template-columns:1fr auto}.developer-docs-page .network-setting code{grid-column:1/-1;grid-row:2}}
