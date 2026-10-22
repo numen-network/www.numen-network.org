@@ -1,0 +1,187 @@
+[
+  {
+    "path": "/learn",
+    "js": "src/pages/learn/overview.js",
+    "css": "src/pages/learn/overview.css"
+  },
+  {
+    "path": "/learn/what-is-numen",
+    "js": "src/pages/learn/whatisnumen.js",
+    "css": "src/pages/learn/whatisnumen.css"
+  },
+  {
+    "path": "/learn/why-numen",
+    "js": "src/pages/learn/whynumen.js",
+    "css": "src/pages/learn/whynumen.css"
+  },
+  {
+    "path": "/learn/smart-contracts",
+    "js": "src/pages/learn/smartcontracts.js",
+    "css": "src/pages/learn/smartcontracts.css"
+  },
+  {
+    "path": "/learn/roadmap",
+    "js": "src/pages/learn/roadmap.js",
+    "css": "src/pages/learn/roadmap.css"
+  },
+  {
+    "path": "/tokenomics",
+    "js": "src/pages/learn/tokenomics.js",
+    "css": "src/pages/learn/tokenomics.css"
+  },
+  {
+    "path": "/whitepaper",
+    "js": "src/pages/learn/whitepaper.js",
+    "css": "src/pages/learn/whitepaper.css"
+  },
+  {
+    "path": "/technology/proof-of-scan",
+    "js": "src/pages/technology/proofofscan.js",
+    "css": "src/pages/technology/proofofscan.css"
+  },
+  {
+    "path": "/technology/3d-object-registry",
+    "js": "src/pages/technology/3dobjectregistry.js",
+    "css": "src/pages/technology/3dobjectregistry.css"
+  },
+  {
+    "path": "/technology/tokenization",
+    "js": "src/pages/technology/tokenization.js",
+    "css": "src/pages/technology/tokenization.css"
+  },
+  {
+    "path": "/technology/nfts",
+    "js": "src/pages/technology/nfts.js",
+    "css": "src/pages/technology/nfts.css"
+  },
+  {
+    "path": "/technology/evm-smart-contracts",
+    "js": "src/pages/technology/evmsmartcontracts.js",
+    "css": "src/pages/technology/evmsmartcontracts.css"
+  },
+  {
+    "path": "/technology/use-cases",
+    "js": "src/pages/technology/usecases.js",
+    "css": "src/pages/technology/usecases.css"
+  },
+  {
+    "path": "/apps",
+    "js": "src/pages/apps/overview.js",
+    "css": "src/pages/apps/overview.css"
+  },
+  {
+    "path": "/apps/wallet",
+    "js": "src/pages/apps/wallet.js",
+    "css": "src/pages/apps/wallet.css"
+  },
+  {
+    "path": "/apps/miner",
+    "js": "src/pages/apps/miner.js",
+    "css": "src/pages/apps/miner.css"
+  },
+  {
+    "path": "/apps/validator",
+    "js": "src/pages/apps/validator.js",
+    "css": "src/pages/apps/validator.css"
+  },
+  {
+    "path": "/apps/explorer",
+    "js": "src/pages/apps/explorer.js",
+    "css": "src/pages/apps/explorer.css"
+  },
+  {
+    "path": "/apps/numendex",
+    "js": "src/pages/apps/numendex.js",
+    "css": "src/pages/apps/numendex.css"
+  },
+  {
+    "path": "/apps/3d-object-registry",
+    "js": "src/pages/apps/3dobjectregistry.js",
+    "css": "src/pages/apps/3dobjectregistry.css"
+  },
+  {
+    "path": "/developers",
+    "js": "src/pages/developers/developerhub.js",
+    "css": "src/pages/developers/developerhub.css"
+  },
+  {
+    "path": "/developers/contribute",
+    "js": "src/pages/developers/developnumen.js",
+    "css": "src/pages/developers/developnumen.css"
+  },
+  {
+    "path": "/developers/build-apps",
+    "js": "src/pages/developers/buildappsonnumen.js",
+    "css": "src/pages/developers/buildappsonnumen.css"
+  },
+  {
+    "path": "/developers/integrations",
+    "js": "src/pages/developers/integrateexternalapplications.js",
+    "css": "src/pages/developers/integrateexternalapplications.css"
+  },
+  {
+    "path": "/community",
+    "js": "src/pages/community/communityhub.js",
+    "css": "src/pages/community/communityhub.css"
+  },
+  {
+    "path": "/community/team",
+    "js": "src/pages/community/team.js",
+    "css": "src/pages/community/team.css"
+  },
+  {
+    "path": "/community/partners",
+    "js": "src/pages/community/partners.js",
+    "css": "src/pages/community/partners.css"
+  },
+  {
+    "path": "/community/contact",
+    "js": "src/pages/community/contact.js",
+    "css": "src/pages/community/contact.css"
+  },
+  {
+    "path": "/community/channels",
+    "js": "src/pages/community/channels.js",
+    "css": "src/pages/community/channels.css"
+  },
+  {
+    "path": "/markets",
+    "js": "src/pages/markets/markets.js",
+    "css": "src/pages/markets/markets.css"
+  },
+  {
+    "path": "/participate/mining",
+    "js": "src/pages/apps/mining-guide.js",
+    "css": "src/pages/apps/mining-guide.css"
+  },
+  {
+    "path": "/apps/metamask",
+    "js": "src/pages/apps/metamask.js",
+    "css": "src/pages/apps/metamask.css"
+  },
+  {
+    "path": "/developers/bug-bounty",
+    "js": "src/pages/developers/bugbounty.js",
+    "css": "src/pages/developers/bugbounty.css"
+  },
+  {
+    "path": "/developers/evm",
+    "js": "src/pages/developers/evmguide.js",
+    "css": "src/pages/developers/developerdocs.css"
+  },
+  {
+    "path": "/developers/network",
+    "js": "src/pages/developers/networkconfiguration.js",
+    "css": "src/pages/developers/developerdocs.css"
+  },
+  {
+    "path": "/developers/fungible-assets",
+    "js": "src/pages/developers/fungibleassets.js",
+    "css": "src/pages/developers/developerdocs.css"
+  },
+  {
+    "path": "/developers/non-fungible-assets",
+    "js": "src/pages/developers/nonfungibleassets.js",
+    "css": "src/pages/developers/developerdocs.css"
+  }
+]

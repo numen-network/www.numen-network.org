@@ -1,0 +1,1 @@
+pageRegistry["/apps/metamask"] = () => appsMetaMask();

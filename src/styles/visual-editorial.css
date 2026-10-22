@@ -1,0 +1,15 @@
+/* Topic-specific photography from Numen's existing licensed use-case assets. */
+.editorial-photo-holder{position:relative;display:block;width:100%;height:150px;overflow:hidden;border-radius:12px 12px 0 0;background:var(--panel2);margin-bottom:14px}
+.editorial-card-photo{width:100%;height:100%;display:block;object-fit:cover;transition:transform .45s ease;filter:saturate(.88)}
+.has-editorial-photo:hover .editorial-card-photo{transform:scale(1.045)}
+.feature-card.has-editorial-photo{overflow:hidden}
+.feature-card.has-editorial-photo>.editorial-photo-holder{width:calc(100% + 50px);margin:-25px -25px 20px;height:155px;border-radius:16px 16px 0 0}
+.feature-card.has-editorial-photo h3{margin-top:12px}
+.feature-top.editorial-photo-holder{display:flex;align-items:flex-start;justify-content:space-between}
+.feature-top.editorial-photo-holder>.editorial-card-photo{position:absolute;inset:0;z-index:0}
+.feature-top.editorial-photo-holder>.card-icon,.feature-top.editorial-photo-holder>.eyebrow{position:relative;z-index:1;background:color-mix(in srgb,var(--panel) 90%,transparent);padding:5px;border-radius:7px}
+.learn-card-art.editorial-photo-holder,.nl-art.editorial-photo-holder{height:150px}
+.learn-card-art.editorial-photo-holder>svg,.nl-art.editorial-photo-holder>svg{display:none}
+.has-editorial-photo .editorial-photo-holder + h2,.has-editorial-photo .editorial-photo-holder + h3{margin-top:14px}
+@media(max-width:640px){.editorial-photo-holder{height:132px}.feature-card.has-editorial-photo>.editorial-photo-holder{height:140px}}
+@media(prefers-reduced-motion:reduce){.editorial-card-photo{transition:none}.has-editorial-photo:hover .editorial-card-photo{transform:none}}
