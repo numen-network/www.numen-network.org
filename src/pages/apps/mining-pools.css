@@ -1,0 +1,11 @@
+/* Mining pool directory — accessible cards and mobile-friendly layout. */
+.mining-pools-directory .participate-pools{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.mining-pools-directory .participate-pool{display:flex;flex-direction:column;min-width:0;padding:clamp(20px,2.6vw,30px);border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+.mining-pools-directory .participate-pool h3{font-size:1.4rem;margin:18px 0 8px}
+.mining-pools-directory .participate-pool p{flex:1;line-height:1.7}
+.mining-pools-directory .participate-pool .btn{margin-top:16px;align-self:flex-start;max-width:100%;text-align:center}
+.mining-pools-directory .pool-icon{width:60px;height:60px;display:grid;place-items:center;border-radius:16px;background:color-mix(in srgb,#7854d6 12%,var(--panel));color:var(--text);font-size:1.75rem}
+.mining-pools-directory .pool-label{font-size:.76rem;font-weight:750;letter-spacing:.09em;color:var(--muted);margin-top:16px}
+.mining-pools-directory .pool-url{font-size:.81rem;overflow-wrap:anywhere;color:var(--muted)}
+@media(max-width:900px){.mining-pools-directory .participate-pools{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.mining-pools-directory .participate-pools{grid-template-columns:1fr}.mining-pools-directory .participate-pool .btn{align-self:stretch}}

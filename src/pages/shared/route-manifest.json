@@ -155,6 +155,11 @@
     "css": "src/pages/apps/mining-guide.css"
   },
   {
+    "path": "/participate/mining-pools",
+    "js": "src/pages/apps/mining-pools.js",
+    "css": "src/pages/apps/mining-pools.css"
+  },
+  {
     "path": "/apps/metamask",
     "js": "src/pages/apps/metamask.js",
     "css": "src/pages/apps/metamask.css"
