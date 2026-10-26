@@ -2,6 +2,7 @@
 const participationPools=[
   {name:'DiffPool',url:'https://diffpool.xyz/numen/',label:'NUMEN POOL',detail:'Dedicated Numen mining pool page. Review current connection details, worker configuration and payout terms.'},
   {name:'NinjaRaider',url:'https://ninjaraider.com/numen-pplns',label:'PPLNS POOL',detail:'Numen PPLNS pool page. Check share accounting, pool fee, payout threshold and connection instructions.'},
+  {name:'Nitopool',url:'https://pool.nitopool.online/',label:'NUMEN POOL',detail:'Numen mining pool. Review current connection details, fees and payout rules before joining.'},
   {name:'RPlant',url:'https://pool.rplant.xyz/',label:'POOL DIRECTORY',detail:'Pool directory homepage. Search for NUMN and confirm that Numen mining is currently supported before connecting.'}
 ];
 function commandPanel(title,command,description=''){return `<article class="participate-command"><h3>${esc(title)}</h3>${description?`<p>${esc(description)}</p>`:''}<div class="participate-terminal"><code>${esc(command)}</code><button type="button" class="copy-btn" data-copy="${esc(command)}">Copy</button></div></article>`}
