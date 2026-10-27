@@ -2,9 +2,11 @@
 const marketTrackers=[
  ['CoinGecko','Independent NUMN market information','https://www.coingecko.com/en/coins/numen'],
  ['CoinMarketCap','Market tracking and discovery; verified coin page link pending',null],
- ['LiveCoinWatch','Independent cryptocurrency market tracker',network.livecoinwatch||null]
+ ['LiveCoinWatch','Independent cryptocurrency market tracker',network.livecoinwatch||null],
+ ['Blockspot','Independent NUMN coin information and market tracking','https://blockspot.io/coin/numen-numn/']
 ];
 function marketLogo(name){
+ if(name==='Blockspot')return `<span class="market-brand" aria-hidden="true"><img src="/assets/blockspot-logo.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:contain"></span>`;
  const domains={'CoinGecko':'coingecko.com','CoinMarketCap':'coinmarketcap.com','LiveCoinWatch':'livecoinwatch.com','Uniswap':'uniswap.org'};
  const domain=domains[name];
  if(!domain)return `<span class="market-brand-fallback" aria-hidden="true">N</span>`;
