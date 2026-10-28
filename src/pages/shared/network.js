@@ -63,15 +63,6 @@ export const team = [
     avatar: ''
   },
   {
-    id: 'cx',
-    name: 'C X',
-    role: 'Graphics Developer',
-    founder: false,
-    discordUsername: '',
-    telegram: 'https://t.me/onlyonedeveloperr',
-    avatar: ''
-  },
-  {
     id: 'venom',
     name: 'Venom',
     role: 'Marketing & Social Media Manager',
